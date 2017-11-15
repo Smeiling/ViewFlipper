@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sml.viewswitcher.MainActivity">
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:autoStart="true"
+        android:flipInterval="2000"
+        android:inAnimation="@anim/anim_come_in"
+        android:outAnimation="@anim/anim_get_out" />
+
+
+    <com.sml.viewswitcher.AutoTextFlipper
+        android:id="@+id/auto_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:interval="1000"
+        app:textColor="#3399ff"
+        app:textSize="24dp"></com.sml.viewswitcher.AutoTextFlipper>
+</LinearLayout>
